@@ -1,0 +1,9 @@
+<mat-form-field>
+  <mat-select placeholder="select user">
+    <mat-option *ngFor="let user of users" [value]="user.LastName" (click)="onSelect(user)">
+      {{ user.FirstName }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<app-card [config]="cardConfig"></app-card>
+<app-card-details></app-card-details>

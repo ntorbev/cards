@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let card of config" (click)="onSelect($event, card)">
+    {{card.title}}
+  </li>
+</ul>

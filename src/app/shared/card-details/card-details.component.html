@@ -1,0 +1,24 @@
+<table>
+  <tr *ngIf="details.length">
+    <td>title</td>
+    <td>status</td>
+    <td>Apr</td>
+    <td>balance</td>
+    <td>Purchase</td>
+    <td>Credit</td>
+  </tr>
+  <tr *ngFor="let card of details">
+    <td>{{card.title}}</td>
+    <td>{{card.status}}</td>
+    <td>{{card.Apr}}</td>
+    <td>{{card.BalanceTransferOfferDuration}}</td>
+    <td>{{card.PurchaseOfferDuration}}</td>
+    <td>{{card.CreditAvailable}}</td>
+  </tr>
+  <tr class="total" *ngIf="userService.cardCreditSum">
+    <td colspan="5" >TOTAL</td>
+    <td> {{userService.cardCreditSum | currency:'GBP'}}</td>
+  </tr>
+</table>
+
+
