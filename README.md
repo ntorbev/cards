@@ -1,3 +1,9 @@
+1 npm i 
+2 ng serve
+Enjoy
+
+
+
 # Card
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
